@@ -24,4 +24,4 @@ Codes are in `cpp` folder. Compiled using `g++` in Linux OS. To view the graph, 
 #### Result
 ![](cpp/result.png)
 
-Result is similar to the one from Python. There are small differences in the test Frenet label coming from the differences of `spline` algorithm and in sampling of the 2 programs.
+Result is similar to the one from Python. There are small differences in 2 graphs and value of the test sample labels, coming from the differences of `spline` algorithm and in sampling of the 2 programs.
