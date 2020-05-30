@@ -62,11 +62,7 @@ int main(int argc, char** argv) {
 	x_test[0]=0.0; x_test[1]=4;    x_test[2]= 3.0; x_test[3]=8; 
 	y_test[0]=0.0; y_test[1]=-0.5; y_test[2]= 1.0; y_test[3]=-1; 
     for(int i=0; i<4; i++){
-		printf("%f %f\n", x_test[i], y_test[i]);
-	}
-	printf("\n");
-    for(int i=0; i<4; i++){
-		printf("%f %f\n", getFrenet(x_test[i], y_test[i], maps_x, maps_y)[0], getFrenet(x_test[i], y_test[i], maps_x, maps_y)[1]);	
+		printf("%f %f %f %f\n", x_test[i], y_test[i], getFrenet(x_test[i], y_test[i], maps_x, maps_y)[0], getFrenet(x_test[i], y_test[i], maps_x, maps_y)[1]);	
 	}
     return EXIT_SUCCESS;
 }

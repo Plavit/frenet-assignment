@@ -1,7 +1,7 @@
 set multiplot layout 1, 1
-
+set offset 1,1,1,1
 set key top right
 plot	"plot.csv" every :::0::0 title "ref" with p ps 2, \
 	"plot.csv" every :::1::1 title "waypoints" with l lt 1, \
-	"plot.csv" every :::2::2 title "test" with p ps 2,
+	"plot.csv" every :::2::2 using 1:2:(sprintf("(%.2f, %.2f)", $3, $4)) with labels point  pt 7 offset char 1,1 title "test",
 pause -1
